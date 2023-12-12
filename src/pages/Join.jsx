@@ -5,6 +5,8 @@ import { Social } from '@/components/Social';
 import { Modal } from '@/components/Modal';
 import { Policy } from '@/components/Policy';
 
+const URL_SHOP = 'https://luramiclothing.com/';
+
 export const Join = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -18,9 +20,13 @@ export const Join = () => {
 				<div className="w-full max-w-xl mx-2 rounded-md shadow-sm md:mx-auto md:rounded-lg md:shadow-md bg-orange-500">
 					<div className="flex flex-col gap-4 rounded-tl-[48px] rounded-md p-4 md:rounded-tl-[96px] md:rounded-lg md:p-8 bg-white">
 						<header className="grid grid-cols-3 items-center">
-							<div className="col-span-1 text-orange-500">
+							<a
+								href={URL_SHOP}
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+								className="col-span-1 text-orange-500">
 								<LuramiClothing className="w-24 h-12 md:w-32 md:h-16" />
-							</div>
+							</a>
 							<div className="col-span-1 text-orange-500">
 								<h1 className="uppercase text-base font-bold md:text-xl">Contact US</h1>
 							</div>

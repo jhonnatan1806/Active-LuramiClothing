@@ -18,9 +18,9 @@ export const Root = () => {
 							<h2 className="uppercase font-bold text-lg md:text-xl text-orange-500">Follow US</h2>
 							<Social className="flex flex-row justify-center gap-2 md:gap-4" />
 						</div>
-                        <a href={URL_SHOP} rel="noreferrer noopener" target="_blank">
-                            <LuramiClothing className="w-40 h-20 md:w-48 md:h-24 text-orange-500" />
-                        </a>
+						<a href={URL_SHOP} rel="noopener noreferrer nofollow" target="_blank">
+							<LuramiClothing className="w-40 h-20 md:w-48 md:h-24 text-orange-500" />
+						</a>
 						<Link
 							to="/join"
 							className="px-12 py-2 rounded-[16px] uppercase hover:scale-105 transition-all bg-orange-500 text-white">
