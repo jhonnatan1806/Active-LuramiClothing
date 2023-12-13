@@ -91,10 +91,10 @@ export const Form = ({onClick}) => {
 					&nbsp;of Lurami Clothing.
 				</label>
 			</div>
-			<div className="flex justify-center">
+			<div className="flex justify-center mt-4">
 				<button
 					type="submit"
-					className="mt-2 px-12 py-2 rounded-[16px] uppercase hover:scale-105 transition-all bg-orange-500 text-white">
+					className="px-12 py-2 rounded-[16px] uppercase hover:scale-105 transition-all bg-orange-500 text-white">
 					Submit
 				</button>
 			</div>
