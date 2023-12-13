@@ -28,7 +28,7 @@ export const Join = () => {
 								<LuramiClothing className="w-16 h-8 md:w-24 md:h-12" />
 							</a>
 							<div className="flex items-end h-full col-span-1 text-orange-500">
-								<h1 className="uppercase text-base font-extrabold text-center md:text-2xl md:leading-none">Contact US</h1>
+								<h1 className="uppercase text-base font-extrabold text-center md:text-2xl md:leading-[0.75]">Contact US</h1>
 							</div>
 							<Social className="flex flex-row justify-end items-end gap-1 w-full h-full md:gap-2" size="w-4 h-4 md:w-5 md:h-5" />
 						</header>
