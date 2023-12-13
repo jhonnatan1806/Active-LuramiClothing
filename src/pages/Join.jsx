@@ -25,12 +25,12 @@ export const Join = () => {
 								target="_blank"
 								rel="noopener noreferrer nofollow"
 								className="col-span-1 text-orange-500">
-								<LuramiClothing className="w-24 h-12 md:w-32 md:h-16" />
+								<LuramiClothing className="w-16 h-8 md:w-24 md:h-12" />
 							</a>
-							<div className="col-span-1 text-orange-500">
-								<h1 className="uppercase text-base font-bold md:text-xl">Contact US</h1>
+							<div className="flex items-end h-full col-span-1 text-orange-500">
+								<h1 className="uppercase text-base font-extrabold text-center md:text-2xl md:leading-none">Contact US</h1>
 							</div>
-							<Social className="flex flex-row justify-end gap-1 w-full md:gap-2" />
+							<Social className="flex flex-row justify-end items-end gap-1 w-full h-full md:gap-2" size="w-4 h-4 md:w-5 md:h-5" />
 						</header>
 						<div className="w-full h-0.5 md:h-1 bg-orange-500"></div>
 						<p className="text-center text-sm font-light md:py-2 md:text-lg">

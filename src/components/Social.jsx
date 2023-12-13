@@ -7,7 +7,7 @@ const SOCIAL = {
 	TIKTOK: 'https://tiktok.com/@luramiclothing/',
 };
 
-export const Social = ({ className }) => {
+export const Social = ({ className, size }) => {
 	return (
 		<div className={className ?? 'flex flex-row gap-2'}>
 			<a
@@ -16,7 +16,7 @@ export const Social = ({ className }) => {
 				rel="noopener noreferrer nofollow"
 				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-all text-white bg-orange-500"
 				title="Visit our instagram page">
-				<Instagram className="w-5 h-5 md:w-6 md:h-6" />
+				<Instagram className={size ?? 'w-5 h-5 md:w-6 md:h-6'} />
 			</a>
 			<a
 				href={SOCIAL.FACEBOOK}
@@ -24,7 +24,7 @@ export const Social = ({ className }) => {
 				rel="noopener noreferrer nofollow"
 				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-all text-white bg-orange-500"
 				title="Visit our facebook page">
-				<Facebook className="w-5 h-5 md:w-6 md:h-6" />
+				<Facebook className={size ?? 'w-5 h-5 md:w-6 md:h-6'} />
 			</a>
 			<a
 				href={SOCIAL.TIKTOK}
@@ -32,7 +32,7 @@ export const Social = ({ className }) => {
 				rel="noopener noreferrer nofollow"
 				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-all text-white bg-orange-500"
 				title="Visit our tiktok page">
-				<Tiktok className="w-5 h-5 md:w-6 md:h-6" />
+				<Tiktok className={size ?? 'w-5 h-5 md:w-6 md:h-6'} />
 			</a>
 		</div>
 	);

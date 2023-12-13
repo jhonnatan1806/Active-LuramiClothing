@@ -94,7 +94,7 @@ export const Form = ({onClick}) => {
 			<div className="flex justify-center">
 				<button
 					type="submit"
-					className="px-12 py-2 rounded-[16px] uppercase hover:scale-105 transition-all bg-orange-500 text-white">
+					className="mt-2 px-12 py-2 rounded-[16px] uppercase hover:scale-105 transition-all bg-orange-500 text-white">
 					Submit
 				</button>
 			</div>
