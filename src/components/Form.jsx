@@ -19,7 +19,7 @@ export const Form = ({onClick}) => {
 	if (status === 'success') {
 		return (
 			<section>
-				<div className="text-2xl text-center font-medium">Thank you!</div>
+				<div className="text-2xl text-center font-medium uppercase">Thank you!</div>
 				<div className="text-orange-500">
 					<Success className="w-24 h-24 mx-auto" />
 				</div>
@@ -31,7 +31,7 @@ export const Form = ({onClick}) => {
 	if (status === 'error') {
 		return (
 			<section>
-				<div className="text-2xl text-center font-medium">Something bad happened!</div>
+				<div className="text-2xl text-center font-medium uppercase">Something bad happened!</div>
 				<div className="text-orange-500">
 					<Error className="w-24 h-24 mx-auto" />
 				</div>
