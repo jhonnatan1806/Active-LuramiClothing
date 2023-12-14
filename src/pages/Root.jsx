@@ -12,7 +12,7 @@ export const Root = () => {
 				<div className="w-full h-full hidden md:flex md:flex-col md:items-center md:justify-center bg-black/50">
 					<h1 className="text-6xl font-extrabold uppercase drop-shadow-md text-white">Coming Soon</h1>
 				</div>
-				<div className="flex flex-col items-center justify-between w-full md:m-0 md:max-w-[400px] h-screen bg-white">
+				<div className="flex flex-col items-center justify-between w-full md:m-0 md:max-w-[400px] h-full bg-white">
                     <div></div>
 					<div className='flex flex-col gap-2 w-full pl-12'>
 						<a href={URL_SHOP} target="_blank" rel="noopener noreferrer nofollow">
