@@ -14,7 +14,7 @@ export const Social = ({ className, size }) => {
 				href={SOCIAL.INSTAGRAM}
 				target="_blank"
 				rel="noopener noreferrer nofollow"
-				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-all text-white bg-orange-500"
+				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-transform text-white bg-orange-500"
 				title="Visit our instagram page">
 				<Instagram className={size ?? 'w-5 h-5 md:w-6 md:h-6'} />
 			</a>
@@ -22,7 +22,7 @@ export const Social = ({ className, size }) => {
 				href={SOCIAL.FACEBOOK}
 				target="_blank"
 				rel="noopener noreferrer nofollow"
-				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-all text-white bg-orange-500"
+				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-transform text-white bg-orange-500"
 				title="Visit our facebook page">
 				<Facebook className={size ?? 'w-5 h-5 md:w-6 md:h-6'} />
 			</a>
@@ -30,7 +30,7 @@ export const Social = ({ className, size }) => {
 				href={SOCIAL.TIKTOK}
 				target="_blank"
 				rel="noopener noreferrer nofollow"
-				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-all text-white bg-orange-500"
+				className="rounded-full p-1 md:p-1.5 hover:scale-105 transition-transform text-white bg-orange-500"
 				title="Visit our tiktok page">
 				<Tiktok className={size ?? 'w-5 h-5 md:w-6 md:h-6'} />
 			</a>

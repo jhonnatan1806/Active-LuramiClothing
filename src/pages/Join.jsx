@@ -8,16 +8,15 @@ import { Policy } from '@/components/Policy';
 const URL_SHOP = 'https://luramiclothing.com/';
 
 export const Join = () => {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const handleToggle = (value) => {
-		setIsOpen(value);
-	};
+	const [show, setShow] = useState(false);
+	const handleOpen = () => setShow(true);
+	const handleClose = () => setShow(false);
 
 	return (
 		<React.Fragment>
-			<main className="flex justify-center items-center w-screen h-screen bg-gray-100">
-				<div className="w-full max-w-xl mx-2 rounded-md shadow-sm md:mx-auto md:rounded-lg md:shadow-md bg-orange-500">
+			<main className="relative flex justify-center items-center w-screen h-screen bg-coming-soon bg-cover bg-center">
+				<div className="absolute inset-0 z-10 bg-black/50"></div>
+				<div className="relative z-20 w-full max-w-xl mx-2 rounded-md shadow-sm md:mx-auto md:rounded-lg md:shadow-md bg-orange-500">
 					<div className="flex flex-col gap-4 rounded-tl-[48px] rounded-md p-4 md:rounded-tl-[96px] md:rounded-lg md:p-8 bg-white">
 						<table className="items-center">
 							<tbody className="w-full">
@@ -28,9 +27,9 @@ export const Join = () => {
 										</a>
 									</td>
 									<td className="text-orange-500">
-										<div className="flex justify-center w-full h-full text-orange-500">
-											<h1 className="uppercase text-base font-extrabold md:text-2xl leading-[0.75]">
-												Contact US
+										<div className="flex justify-center w-full h-full">
+											<h1 className="uppercase text-lg font-extrabold md:text-3xl leading-[0.75!important]">
+												Subscribe
 											</h1>
 										</div>
 									</td>
@@ -44,13 +43,13 @@ export const Join = () => {
 							</tbody>
 						</table>
 						<div className="w-full h-0.5 md:h-1 bg-orange-500"></div>
-						<p className="text-center text-sm font-light md:py-2 md:text-lg">
-							Are you ready for the new Lurami Clothing brand?
+						<p className="text-center text-sm font-extrabold uppercase mb-2 md:text-lg text-orange-500">
+							Face your challenge with style
 						</p>
-						<Form onClick={handleToggle} />
+						<Form onClick={handleOpen} />
 					</div>
 				</div>
-				<Modal value={isOpen} onClick={handleToggle}>
+				<Modal value={show} onClose={handleClose}>
 					<Policy />
 				</Modal>
 			</main>
