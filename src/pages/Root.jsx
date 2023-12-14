@@ -18,7 +18,7 @@ export const Root = () => {
 						<a href={URL_SHOP} target="_blank" rel="noopener noreferrer nofollow">
 							<LuramiClothing className="w-32 h-16 md:w-40 md:h-20 text-orange-500" />
 						</a>
-						<div className="w-full h-3 bg-orange-500"></div>
+						<div className="w-full h-3 bg-orange-500 mb-2"></div>
 						<h2 className="uppercase font-extrabold text-xl mb-6 md:text-3xl text-orange-500">
 							Face your
 							<br />
