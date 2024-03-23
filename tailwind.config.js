@@ -6,7 +6,12 @@ export default {
 		extend: {
             backgroundImage: {
                 'coming-soon': "url('/img/coming-soon.webp')",
-            }
+            },
+            colors: {
+                primary: '#FFA500',
+                secondary: '#d8a7d2',
+                tertiary: '#3b0347',
+            },
 		},
 	},
 	plugins: [],
