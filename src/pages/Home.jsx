@@ -5,52 +5,48 @@ import { Link } from 'react-router-dom';
 
 const URL_SHOP = 'https://luramiclothing.com/';
 
-function Background({ className }) {
+function Banner(props) {
 	return (
-		<section className={className}>
-			<div className="relative h-full flex flex-col items-center md:items-start md:justify-center md:pl-32 pt-36 md:pt-4 select-none">
-				<div>
-					<h1 className="uppercase md:text-7xl text-4xl font-extrabold text-white mb-6 md:mb-16">Subscribe now!</h1>
-					<p className="md:text-3xl text-base font-medium text-white mb-2">
-						The first 500 registered will have <br /> early access to
-					</p>
-					<h2 className="uppercase md:text-5xl text-2xl font-bold italic text-tertiary mb-2">
-						Our exclusive <br />
-						launch collection
-					</h2>
-					<p className="md:text-4xl text-xl font-medium italic text-white">and more benefits.</p>
-				</div>
+		<section className={props.className}>
+			<div className='select-none'>
+				<h1 className="text-white text-3xl md:text-6xl font-extrabold uppercase mb-4 md:mb-8">Subscribe now!</h1>
+				<p className="text-white text-sm md:text-xl mb-1 md:mb-2 font-medium">
+					The first 500 registered will have <br /> early access to
+				</p>
+				<h2 className="text-tertiary text-xl md:text-4xl mb-1 md:mb-2 font-bold italic uppercase">
+					Our exclusive <br /> launch collection
+				</h2>
+				<p className="text-white text-lg md:text-3xl font-medium italic">and more benefits.</p>
 			</div>
 		</section>
 	);
 }
 
-function Side({ className }) {
+function Information(props) {
 	return (
-		<section className={className}>
-			<div className="flex flex-col items-center justify-between md:pl-32 h-full py-4 pl-24">
-				<div></div>
-				<div className="flex flex-col gap-2 w-full">
-					<a href={URL_SHOP} target="_blank" rel="noopener noreferrer nofollow" className='pb-3'>
-						<LuramiClothing className="md:w-36 w-32 h-auto text-orange-500" />
+		<section className={props.className}>
+			<div className="text-primary h-full flex flex-col items-center justify-between pl-24">
+				<div className="w-full flex flex-col gap-2">
+					<a href={URL_SHOP} target="_blank" rel="noopener noreferrer nofollow">
+						<LuramiClothing className="w-28 md:w-36 h-auto" />
 					</a>
-					<div className="w-full h-3 bg-orange-500 mb-2"></div>
-					<h2 className="uppercase font-extrabold text-2xl mb-6 md:text-3xl text-orange-500">
+					<div className="bg-primary w-full h-3"></div>
+					<h2 className="font-extrabold text-xl md:text-3xl uppercase">
 						Face your
 						<br />
 						challenge
-						<br /> with style
+						<br />
+						with style
 					</h2>
-					<Link
-						to="/join"
-						className="w-fit px-8 py-2 rounded-[20px] uppercase hover:scale-105 transition-all bg-orange-500 text-white">
+					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit rounded-3xl uppercase px-8 py-2 md:px-12 md:py-3 my-2 md:my-4">
 						Join Now
 					</Link>
+					
 				</div>
-				<div className="flex flex-row items-center justify-between w-full pb-4 pr-16">
-					<h3 className="uppercase font-extrabold text-lg md:text-xl text-orange-500">Follow US</h3>
-					<Social className="flex gap-2 md:gap-4" size="w-4 h-4 md:w-5 md:h-5" />
-				</div>
+        <div className="flex flex-row w-full gap-12 md:gap-20">
+						<h3 className="font-extrabold text-base md:text-2xl uppercase">Follow US</h3>
+						<Social className="flex gap-2" size="w-4 h-4" />
+					</div>
 			</div>
 		</section>
 	);
@@ -58,11 +54,14 @@ function Side({ className }) {
 
 export const Home = () => {
 	return (
-		<main className="relative flex items-end h-screen">
-			<section className="absolute z-0 top-0 md:right-0 bg-secondary h-full w-screen md:pl-36">
-				<Background className="relative z-10 bg-orange-500 h-full w-full max-w-screen-2xl md:rounded-tl-[350px] rounded-tl-[250px]"/>
-			</section>
-			<Side className="md:absolute z-20 md:top-0 md:right-0 bg-white h-[500px] md:h-screen w-screen md:w-[500px] md:rounded-tl-[350px] rounded-tl-[250px]"/>
+		<main className="bg-secondary h-screen w-screen md:pl-[8vw]">
+			<div className="bg-primary h-full w-full flex flex-col md:flex-row md:justify-end rounded-tl-[50vw] md:rounded-tl-[25vw]">
+				<Banner className="bg-transparent h-1/2 grow flex flex-col items-center pt-[20vh] md:pt-[35vh]" />
+				<section className="bg-white h-1/2 w-full md:h-full md:w-[30vw] rounded-tl-[50vw] md:rounded-tl-[25vw]">
+					<Information className="bg-transparent h-full w-full pt-[8vh] pb-[2vh] md:pt-[35vh]"/>
+				</section>
+			</div>
 		</main>
 	);
 };
+
