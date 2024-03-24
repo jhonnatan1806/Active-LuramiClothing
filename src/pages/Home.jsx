@@ -44,7 +44,7 @@ function Information(props) {
 					
 				</div>
         <div className="flex flex-row w-full justify-between items-center md:gap-20 pr-8">
-						<h3 className="font-extrabold text-base md:text-lg 2xl:text-xl uppercase">Follow US</h3>
+						<span className="font-extrabold text-base md:text-lg 2xl:text-xl uppercase">Follow US</span>
 						<Social className="flex gap-2" size="w-4 h-4" />
 					</div>
 			</div>
