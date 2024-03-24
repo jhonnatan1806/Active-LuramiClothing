@@ -43,7 +43,7 @@ function Information(props) {
 					</Link>
 					
 				</div>
-        <div className="flex flex-row w-full gap-12 md:gap-20">
+        <div className="flex flex-row w-full justify-between items-center md:gap-20 pr-8">
 						<h3 className="font-extrabold text-base md:text-2xl uppercase">Follow US</h3>
 						<Social className="flex gap-2" size="w-4 h-4" />
 					</div>
