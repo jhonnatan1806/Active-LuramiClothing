@@ -5,8 +5,8 @@ export default {
 	theme: {
 		extend: {
             backgroundImage: {
-                'coming-soon': "url('img/coming-soon.webp')",
-                'banner': "url('img/background.jpg')"
+                'coming-soon': "url('/img/coming-soon.webp')",
+                'banner': "url('/img/background.jpg')"
             },
             colors: {
                 primary: '#ff6600',
