@@ -57,7 +57,7 @@ function Information(props) {
 export const Home = () => {
 	return (
 		<main className="h-screen w-screen flex flex-col md:flex-row">
-      <section className='grow w-full h-1/2 md:h-full bg-[url("background.jpg")] bg-cover bg-center'>
+      <section className='grow w-full h-1/2 md:h-full bg-banner bg-cover bg-center'>
         <Banner className="flex items-center md:items-start justify-center w-full h-full md:pt-[35vh]"/>
       </section>
       <section className="h-1/2 w-full md:h-full md:w-[35vw]">

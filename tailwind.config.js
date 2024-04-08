@@ -6,7 +6,7 @@ export default {
 		extend: {
             backgroundImage: {
                 'coming-soon': "url('img/coming-soon.webp')",
-                'bg-custom': "url('img/background.jpg')"
+                'banner': "url('img/background.jpg')"
             },
             colors: {
                 primary: '#ff6600',
