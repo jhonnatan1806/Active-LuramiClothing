@@ -33,7 +33,7 @@ function Information(props) {
 						<LuramiClothing className="w-28 md:w-36 h-auto pt-2" />
 					</a>
 					<div className="bg-primary w-full h-3"></div>
-          <div className="w-full flex md:flex-col items-center md:items-start justify-between gap-2 pr-16 md:pr-0">
+          <div className="w-full flex md:flex-col items-end md:items-start justify-between gap-2 pr-16 md:pr-0">
 					<h2 className="font-extrabold text-base md:text-2xl uppercase">
 						Face your
 						<br />
@@ -41,7 +41,7 @@ function Information(props) {
 						<br />
 						with style
 					</h2>
-					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit h-fit rounded-2xl uppercase px-4 py-1 md:px-8 md:py-1 my-2 md:my-8">
+					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit h-fit rounded-2xl uppercase px-4 py-1 md:px-8 md:py-1 mt-2 md:mt-8">
 						Join Now
 					</Link>
 					</div>
