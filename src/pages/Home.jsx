@@ -41,7 +41,7 @@ function Information(props) {
 						<br />
 						with style
 					</h2>
-					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit h-fit rounded-2xl uppercase px-4 py-1 md:px-8 md:py-1 mt-2 md:mt-8">
+					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit h-fit rounded-2xl uppercase px-4 py-1 md:px-8 md:py-1 mt-2 mb-1 md:mt-8">
 						Join Now
 					</Link>
 					</div>
