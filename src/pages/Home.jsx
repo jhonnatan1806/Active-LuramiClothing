@@ -9,11 +9,11 @@ function Banner(props) {
 	return (
 		<section className={props.className}>
 			<div className='select-none'>
-				<h1 className="text-white text-3xl md:text-6xl font-extrabold uppercase mb-2 md:mb-8">Subscribe now!</h1>
-				<p className="text-white text-lg md:text-3xl mb-1 md:mb-2 font-semibold md:leading-[3.2rem!important]">
+				<h1 className="text-white text-center md:text-start text-3xl md:text-6xl font-extrabold uppercase mb-4 md:mb-8">Subscribe now!</h1>
+				<p className="text-white text-base md:text-3xl mb-1 md:mb-2 font-semibold md:leading-[3.2rem!important]">
 					Only the first to register will get early 
           <br /> access to our{' '}
-          <span className='text-primary text-xl md:text-4xl mb-1 md:mb-2 font-bold italic uppercase'>
+          <span className='text-primary text-lg md:text-4xl mb-1 md:mb-2 font-bold italic uppercase'>
             Exclusive launch 
             <br /> collection
           </span>{' '}
@@ -27,23 +27,24 @@ function Banner(props) {
 function Information(props) {
 	return (
 		<section className={props.className}>
-			<div className="text-primary h-full flex flex-col items-center justify-between pl-16">
+			<div className="text-primary h-full flex flex-col items-center justify-around md:justify-between pl-16">
 				<div className="w-full flex flex-col gap-2">
 					<a href={URL_SHOP} target="_blank" rel="noopener noreferrer nofollow">
 						<LuramiClothing className="w-28 md:w-36 h-auto pt-2" />
 					</a>
 					<div className="bg-primary w-full h-3"></div>
-					<h2 className="font-extrabold text-lg md:text-2xl uppercase">
+          <div className="w-full flex md:flex-col items-center md:items-start justify-between gap-2 pr-16 md:pr-0">
+					<h2 className="font-extrabold text-base md:text-2xl uppercase">
 						Face your
 						<br />
 						challenge
 						<br />
 						with style
 					</h2>
-					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit rounded-2xl uppercase px-4 py-1 md:px-8 md:py-1 my-2 md:my-8">
+					<Link to="/join" className="bg-primary text-white text-sm md:text-base w-fit h-fit rounded-2xl uppercase px-4 py-1 md:px-8 md:py-1 my-2 md:my-8">
 						Join Now
 					</Link>
-					
+					</div>
 				</div>
         <div className="flex flex-row w-full justify-between items-center md:gap-20 pr-8">
 						<span className="font-extrabold text-base md:text-lg uppercase">Follow US</span>
